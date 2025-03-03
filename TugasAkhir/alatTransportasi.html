@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Edukasi Alat Musik</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+  
+  <div class="container">
+    <h1>Pilih Alat Transportasi</h1>
+    <div class="inner-container">
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTransportasi/bus.png" alt="bus" class="instrument" onclick="playSound('assets/alatTransportasi/sound/bus.opus')">
+        <p class="image-name">Bus</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTransportasi/helikopter.png" alt="helikopter" class="instrument" onclick="playSound('assets/alatTransportasi/sound/helikopter.opus ')">
+        <p class="image-name">Helikopter</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTransportasi/kapal-laut.png" alt="kapal-laut" class="instrument" onclick="playSound('assets/alatTransportasi/sound/kapal-laut.opus ')">
+        <p class="image-name">Kapal Laut</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTransportasi/kereta.png" alt="kereta" class="instrument" onclick="playSound('assets/alatTransportasi/sound/kereta.opus')">
+        <p class="image-name">Kereta</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTransportasi/mobil.png" alt="mobil" class="instrument" onclick="playSound('assets/alatTransportasi/sound/mobil.opus')">
+        <p class="image-name">Mobil</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTransportasi/motor.png" alt="motor" class="instrument" onclick="playSound('assets/alatTransportasi/sound/motor.opus')">
+        <p class="image-name">Motor</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTransportasi/pesawat.png" alt="pesawat" class="instrument" onclick="playSound('assets/alatTransportasi/sound/pesawat.opus')">
+        <p class="image-name">Pesawat</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTransportasi/sepeda.png" alt="sepeda" class="instrument" onclick="playSound('assets/alatTransportasi/sound/sepeda.opus')">
+        <p class="image-name">Sepeda</p>
+      </div>
+      
+    </div>
+  </div>
+  <button class="bottom-left" onclick="window.location.href='Home.html'">Home</button>
+  <script>
+    function playHoverSound() {
+      let sound = new Audio('assets/pop.mp3');
+      sound.play();
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

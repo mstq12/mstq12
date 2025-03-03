@@ -1,0 +1,12 @@
+<html>
+    <body onload=run()>
+        <script>
+            var i=0;
+            function run() {
+                m1.style.left=i; i+=5;
+                setTimeout("run()", 70);
+            }
+        </script>
+        <img width="200px" id="m1" src="../Project/kucing.jpeg" style="position: absolute; top: 10; left: 0;">
+    </body>
+</html>

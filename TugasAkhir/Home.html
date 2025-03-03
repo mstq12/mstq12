@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Edukasi Alat Musik</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <audio autoplay loop>
+    <source src="assets/Town.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+
+  
+
+  <div class="container">  
+    <h1>BELAJAR MENGENAL GAMBAR</h1>
+    <h2>Kenalan sama Aku Yukk!!</h2>
+    
+    <div class="inner-container">
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <a href="alatMusik.html">  
+          <img src="assets/alatMusik.png" alt="alatMusik" class="instrument">
+          <p class="image-name">Alat Musik</p>
+        </a>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <a href="alatTransportasi.html">
+          <img src="assets/alatTransportasi.png" alt="alatTransportasi" class="instrument">
+          <p class="image-name">Alat Transportasi</p>
+        </a>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <a href="alatTulis.html">  
+          <img src="assets/alatTulis.png" alt="alatTulis" class="instrument">
+          <p class="image-name">Alat Tulis</p>
+        </a>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <a href="anggotaTubuh.html">  
+          <img src="assets/anggotaTubuh.png" alt="anggotaTubuh" class="instrument">
+          <p class="image-name">Anggota Tubuh</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <button class="bottom-left" onclick="window.location.href='about.html'">About</button> -->
+
+  <script>
+    function playHoverSound() {
+      let sound = new Audio('assets/pop.mp3');
+      sound.play();
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

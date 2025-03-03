@@ -1,0 +1,19 @@
+<html>
+    <style>
+        span {position: absolute; color: red}
+    </style>
+
+    <script>
+        code1 = "";
+        function draw_star() {
+            for (i=1; i<=8000; i++){
+                x = Math.round(Math.random()*screen.width); y= Math.round(Math.random()*screen.height);
+                code1 += "<span id=dot"+i;
+                code1 += " style='left:" + x + "; top:" + y + "'>*</span>"; 
+            }
+            bd.innerHTML = code1;
+        }
+    
+    </script>
+    <body id="bd" onload="draw_star();"> </body>
+</html>

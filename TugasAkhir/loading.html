@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!-- Efek loading -->
+  <div class="loader"></div>
+
+  <script>
+    // Simulasi efek loading selama beberapa detik
+    setTimeout(() => {
+      window.location.href = "Home.html"; // Pindahkan ke laman Home.html setelah loading selesai
+    }, 3000); // Misalnya, 3000ms (3 detik)
+
+    // function playBacksound() {
+    //   var audio = new Audio("assets/Town.mp3");
+    //   audio.play();
+    // }
+
+    // window.onload = function() {
+    //   playBacksound(); // Jalankan backsound setelah laman Home.html dimuat
+    // };
+  </script>
+</body>
+</html>

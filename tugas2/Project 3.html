@@ -1,0 +1,13 @@
+<html>
+    <style>
+        img {position: absolute;}
+    </style>
+
+    <script>
+        function MovePen() {pen.style.left=event.clientX-250; pen.style.top=event.clientY-130; }
+    </script>
+
+    <body>
+        <img id="pen" width="500px" src="../Project/kucing.jpeg" OnMouseMove="MovePen()">
+    </body>
+</html>

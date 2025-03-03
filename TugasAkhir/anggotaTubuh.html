@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Edukasi Alat Musik</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+  
+  <div class="container">
+    <h1>Pilih Anggota Tubuh</h1>
+    <div class="inner-container">
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/anggotaTubuh/gigi.png" alt="gigi" class="instrument" onclick="playSound('assets/anggotaTubuh/sound/gigi.opus')">
+        <p class="image-name">gigi</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/anggotaTubuh/hidung.png" alt="hidung" class="instrument" onclick="playSound('assets/anggotaTubuh/sound/hidung.opus ')">
+        <p class="image-name">hidung</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/anggotaTubuh/jari.png" alt="jari" class="instrument" onclick="playSound('assets/anggotaTubuh/sound/jari.opus ')">
+        <p class="image-name">Jari</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/anggotaTubuh/kaki.png" alt="kaki" class="instrument" onclick="playSound('assets/anggotaTubuh/sound/kaki.opus')">
+        <p class="image-name">Kaki</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/anggotaTubuh/kepala.png" alt="kepala" class="instrument" onclick="playSound('assets/anggotaTubuh/sound/kepala.opus')">
+        <p class="image-name">Kepala</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/anggotaTubuh/mata.png" alt="mata" class="instrument" onclick="playSound('assets/anggotaTubuh/sound/mata.opus')">
+        <p class="image-name">Mata</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/anggotaTubuh/mulut.png" alt="mulut" class="instrument" onclick="playSound('assets/anggotaTubuh/sound/mulut.opus')">
+        <p class="image-name">Mulut</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/anggotaTubuh/rambut.png" alt="rambut" class="instrument" onclick="playSound('assets/anggotaTubuh/sound/rambut.opus')">
+        <p class="image-name">Rambut</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/anggotaTubuh/tangan.png" alt="tangan" class="instrument" onclick="playSound('assets/anggotaTubuh/sound/tangan.opus')">
+        <p class="image-name">Tangan</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/anggotaTubuh/telinga.png" alt="telinga" class="instrument" onclick="playSound('assets/anggotaTubuh/sound/telinga.opus')">
+        <p class="image-name">Telinga</p>
+      </div>
+      
+    </div>
+  </div>
+  <button class="bottom-left" onclick="window.location.href='Home.html'">Home</button>
+  <script>
+    function playHoverSound() {
+      let sound = new Audio('assets/pop.mp3');
+      sound.play();
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

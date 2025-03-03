@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Edukasi Alat Musik</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+  
+  <div class="container">
+    <h1>Pilih Alat Musik</h1>
+    <div class="inner-container">
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatMusik/angklung.png" alt="Angklung" class="instrument" onclick="playSound('assets/alatMusik/sound/angklung.opus')">
+        <p class="image-name">Angklung</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatMusik/biola.png" alt="Angklung" class="instrument" onclick="playSound('assets/alatMusik/sound/biola.opus ')">
+        <p class="image-name">Biola</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatMusik/drum.png" alt="Angklung" class="instrument" onclick="playSound('assets/alatMusik/sound/drum.opus')">
+        <p class="image-name">Drum</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatMusik/gitar.png" alt="Angklung" class="instrument" onclick="playSound('assets/alatMusik/sound/gitar.opus')">
+        <p class="image-name">Gitar</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatMusik/piano.png" alt="Angklung" class="instrument" onclick="playSound('assets/alatMusik/sound/piano.opus')">
+        <p class="image-name">Piano</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatMusik/suling.png" alt="Angklung" class="instrument" onclick="playSound('assets/alatMusik/sound/suling.opus')">
+        <p class="image-name">Suling</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatMusik/terompet.png" alt="Angklung" class="instrument" onclick="playSound('assets/alatMusik/sound/terompet.opus')">
+        <p class="image-name">Terompet</p>
+      </div>      
+    </div>
+  </div>
+  <button class="bottom-left" onclick="window.location.href='Home.html'">Home</button>
+  <script>
+    function playHoverSound() {
+      let sound = new Audio('assets/pop.mp3');
+      sound.play();
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Edukasi Alat Musik</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+  
+  <div class="container">
+    <h1>Pilih Alat Tulis</h1>
+    <div class="inner-container">
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTulis/buku.png" alt="buku" class="instrument" onclick="playSound('assets/alatTulis/sound/buku.opus')">
+        <p class="image-name">Buku</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTulis/cat-air.png" alt="cat-air" class="instrument" onclick="playSound('assets/alatTulis/sound/cat-air.opus ')">
+        <p class="image-name">Cat Air</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTulis/crayon.png" alt="crayon" class="instrument" onclick="playSound('assets/alatTulis/sound/crayon.opus ')">
+        <p class="image-name">Crayon</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTulis/pena.png" alt="pena" class="instrument" onclick="playSound('assets/alatTulis/sound/pena.opus')">
+        <p class="image-name">Pena</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTulis/penggaris.png" alt="penggaris" class="instrument" onclick="playSound('assets/alatTulis/sound/penggaris.opus')">
+        <p class="image-name">Penggaris</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTulis/penghapus.png" alt="penghapus" class="instrument" onclick="playSound('assets/alatTulis/sound/penghapus.opus')">
+        <p class="image-name">Penghapus</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTulis/pensil.png" alt="pensil" class="instrument" onclick="playSound('assets/alatTulis/sound/pensil.opus')">
+        <p class="image-name">Pensil</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTulis/pensilwarna.png" alt="pensilwarna" class="instrument" onclick="playSound('assets/alatTulis/sound/pensilwarna.opus')">
+        <p class="image-name">Pensil Warna</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTulis/peruncing.png" alt="peruncing" class="instrument" onclick="playSound('assets/alatTulis/sound/peruncing.opus')">
+        <p class="image-name">Peruncing</p>
+      </div>
+      <div class="image-wrapper" onmouseover="playHoverSound()">
+        <img src="assets/alatTulis/spidol.png" alt="spidol" class="instrument" onclick="playSound('assets/alatTulis/sound/spidol.opus')">
+        <p class="image-name">Spidol</p>
+      </div>
+      
+    </div>
+  </div>
+  <button class="bottom-left" onclick="window.location.href='Home.html'">Home</button>
+  <script>
+    function playHoverSound() {
+      let sound = new Audio('assets/pop.mp3');
+      sound.play();
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
